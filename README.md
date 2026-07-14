@@ -6,6 +6,12 @@ Frameless window with custom titlebar, context isolation and safe IPC. Threaded 
 
 Trolley gives you an experimental, but from my perspective, fairly solid, production‑ready starting point for desktop apps that need the UI flexibility of the web and the computational power of Python. As someone using Streamlit almost each single day, this template is my wishlist for Electron made come true, the one I wish Electron could be by default.
 
+## Screenshots
+
+![Screenshot](screenshots/trolley_screenshot_1.png)
+
+![Screenshot](screenshots/trolley_screenshot_2.png)
+
 ## Project Structure
 
 ```
