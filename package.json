@@ -1,0 +1,8 @@
+{
+  "name": "have-no-name",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^34.0.0"
+  }
+}

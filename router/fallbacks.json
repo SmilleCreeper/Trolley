@@ -1,0 +1,27 @@
+[
+  {
+    "module_debug": "HomeScreen",
+    "task_debug": "Time Renderer",
+    "cause_debug": "Timer callback exceeded maximum recursion depth"
+  },
+  {
+    "module_debug": "StateManager",
+    "task_debug": "Screen Transition",
+    "cause_debug": "Null reference in layout computation"
+  },
+  {
+    "module_debug": "PythonBridge",
+    "task_debug": "Heartbeat Poll",
+    "cause_debug": "Socket disconnected unexpectedly during handshake"
+  },
+  {
+    "module_debug": "ProgressTracker",
+    "task_debug": "Progress Bar Update",
+    "cause_debug": "DOM animation frame dropped due to layout thrashing"
+  },
+  {
+    "module_debug": "FallbackHandler",
+    "task_debug": "Error Serialization",
+    "cause_debug": "Circular reference detected in error payload"
+  }
+]

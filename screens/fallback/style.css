@@ -1,0 +1,54 @@
+#fallback-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
+  animation: fallback-fade-in 0.3s ease;
+}
+
+@keyframes fallback-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#fallback-card {
+  max-width: 640px;
+  text-align: center;
+}
+
+#fallback-icon {
+  font-size: 48px;
+  color: #ffc107;
+  margin-bottom: 16px;
+}
+
+#fallback-cause {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffc107;
+  margin-bottom: 12px;
+}
+
+#fallback-description {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+#fallback-btn {
+  background: transparent;
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#fallback-btn:hover {
+  background: rgba(255, 193, 7, 0.1);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Framework</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e1e;
+      color: #fff;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    #titlebar {
+      position: relative;
+      height: 32px;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      -webkit-app-region: drag;
+    }
+
+    #titlebar-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0%;
+      background: #2a6b6b;
+      opacity: 0;
+      z-index: 0;
+      -webkit-app-region: drag;
+      transition: width 0.15s ease, background 0.3s ease, opacity 0.3s ease;
+    }
+
+    #titlebar-status {
+      position: relative;
+      flex: 1;
+      height: 100%;
+      display: flex;
+      opacity: 0;
+      align-items: center;
+      padding-left: 12px;
+      z-index: 1;
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+      -webkit-app-region: drag;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    #titlebar-buttons {
+      position: relative;
+      display: flex;
+      height: 100%;
+      margin-left: auto;
+      z-index: 1;
+      -webkit-app-region: no-drag;
+    }
+
+    .titlebar-btn {
+      width: 46px;
+      height: 100%;
+      border: none;
+      background: transparent;
+      color: #fff;
+      font-size: 11px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .titlebar-btn:hover { background: #333; }
+
+    #btn-close:hover { background: #e81123; }
+
+    #screen-container {
+      height: calc(100vh - 32px);
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="titlebar">
+    <div id="titlebar-fill"></div>
+    <div id="titlebar-status"></div>
+    <div id="titlebar-buttons">
+      <button class="titlebar-btn" id="btn-minimize">&#x2014;</button>
+      <button class="titlebar-btn" id="btn-close">&#x2715;</button>
+    </div>
+  </div>
+  <div id="screen-container"></div>
+  <script src="progress.js"></script>
+  <script src="screens/screen-loader.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

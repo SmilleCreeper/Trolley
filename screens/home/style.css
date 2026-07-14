@@ -1,0 +1,77 @@
+#home-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 40px;
+  animation: home-fade-in 0.4s ease;
+}
+
+@keyframes home-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#home-card {
+  text-align: center;
+}
+
+#home-title {
+  font-size: 32px;
+  font-weight: 300;
+  color: #eee;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#home-clock {
+  font-size: 56px;
+  font-weight: 200;
+  color: #4ecdc4;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', 'Consolas', monospace;
+}
+
+#home-count {
+  background: transparent;
+  border: 1px solid #4ecdc4;
+  color: #4ecdc4;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 12px;
+}
+
+#home-count:hover {
+  background: rgba(78, 205, 196, 0.1);
+  box-shadow: 0 0 12px rgba(78, 205, 196, 0.2);
+}
+
+#home-result {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 24px;
+  min-height: 20px;
+  font-family: 'Consolas', monospace;
+}
+
+#home-crash {
+  background: transparent;
+  border: 1px solid #d32f2f;
+  color: #d32f2f;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+#home-crash:hover {
+  background: rgba(211, 47, 47, 0.1);
+  box-shadow: 0 0 12px rgba(211, 47, 47, 0.2);
+}
